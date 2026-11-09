@@ -1,0 +1,49 @@
+{
+  "name": "opencode-open-in",
+  "version": "0.1.0",
+  "description": "OpenCode Desktop GUI plugin that puts the native \"Open in\" button back into the session header, next to the review toggle.",
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "opencode-desktop",
+    "gui-plugin",
+    "vscode",
+    "editor",
+    "file-manager"
+  ],
+  "license": "MIT",
+  "author": "Victor Borisov <it@praesens.ru>",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@git.borisovcode.com/opencode/opencode-open-in.git"
+  },
+  "homepage": "https://git.borisovcode.com/opencode/opencode-open-in",
+  "type": "module",
+  "exports": {
+    "./gui-experimental": "./dist/gui-experimental.cjs"
+  },
+  "files": [
+    "dist/gui-experimental.cjs",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "watch": "vite build --watch",
+    "typecheck": "tsc -p tsconfig.json",
+    "check": "npm run typecheck && npm run build",
+    "prepublishOnly": "npm run check"
+  },
+  "devDependencies": {
+    "@opencode/plugin": "2.2.6",
+    "solid-js": "^1.9.0",
+    "typescript": "^7.0.2",
+    "vite": "^7.0.0",
+    "vite-plugin-solid": "^2.11.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "bun@1.4.0"
+}
