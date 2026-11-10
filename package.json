@@ -1,7 +1,7 @@
 {
   "name": "opencode-open-in",
-  "version": "0.1.0",
-  "description": "OpenCode Desktop GUI plugin that puts the native \"Open in\" button back into the session header, next to the review toggle.",
+  "version": "0.1.1",
+  "description": "OpenCode Desktop GUI plugin that puts the native \"Open in\" button in the session header and adds editor, file manager and copy-path actions to the project menu and command palette.",
   "keywords": [
     "opencode",
     "opencode-plugin",
@@ -15,9 +15,12 @@
   "author": "Victor Borisov <it@praesens.ru>",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@git.borisovcode.com/opencode/opencode-open-in.git"
+    "url": "git+https://github.com/borisovcode/opencode-open-in.git"
   },
-  "homepage": "https://git.borisovcode.com/opencode/opencode-open-in",
+  "homepage": "https://github.com/borisovcode/opencode-open-in",
+  "bugs": {
+    "url": "https://github.com/borisovcode/opencode-open-in/issues"
+  },
   "type": "module",
   "exports": {
     "./gui-experimental": "./dist/gui-experimental.cjs"
